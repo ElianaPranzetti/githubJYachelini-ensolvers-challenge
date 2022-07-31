@@ -3,9 +3,9 @@ import * as controller from '../controllers/notes.controller'
 
 export const routerNotes = Router()
 
-routerNotes.route('/notes').get(controller.listUnarchivedNotes).post(controller.createNote)
+routerNotes.route('/notes').get(controller.listNotes).post(controller.createNote)
 
-routerNotes.route('/notes/archive').get(controller.listArchivedNotes).post(controller.toggleArchiveNote)
+routerNotes.route('/notes/archive').post(controller.toggleArchiveNote)
 
 routerNotes.route('/notes/edit').post(controller.editNote)
 

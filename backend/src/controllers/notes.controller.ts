@@ -20,12 +20,8 @@ export const removeCategory = async (req: Request, res: Response) => {
 	res.send(await services.removeCategory(_id, category))
 }
 
-export const listUnarchivedNotes = async (req: Request, res: Response) => {
-	res.send(await services.listUnarchivedNotes())
-}
-
-export const listArchivedNotes = async (req: Request, res: Response) => {
-	res.send(await services.listArchivedNotes())
+export const listNotes = async (req: Request, res: Response) => {
+	res.send(await services.listNotes())
 }
 
 export const editNote = async (req: Request, res: Response) => {

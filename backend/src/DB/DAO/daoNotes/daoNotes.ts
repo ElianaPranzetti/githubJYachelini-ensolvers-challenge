@@ -24,21 +24,6 @@ export default class daoNotes {
 		}
 	}
 
-	getByID = async (_id: ObjectId) => {
-		try {
-			return await this.collection
-				.findById(_id)
-				.catch((error: Error) => {
-					return error.message
-				})
-				.then((doc) => {
-					return doc
-				})
-		} catch (error) {
-			throw new Error(`${error}`)
-		}
-	}
-
 	editNote = async (_id: ObjectId, newValues: NoteInterface) => {
 		try {
 			return await this.collection
@@ -114,25 +99,11 @@ export default class daoNotes {
 		}
 	}
 
-	listUnarchivedNotes = async () => {
+	listNotes = async () => {
 		try {
 			return await this.collection
-				.find({ archived: false })
-				.catch((error: Error) => {
-					return error.message
-				})
-				.then((doc) => {
-					return doc
-				})
-		} catch (error) {
-			throw new Error(`${error}`)
-		}
-	}
-
-	listArchivedNotes = async () => {
-		try {
-			return await this.collection
-				.find({ archived: true })
+				.find()
+				.sort({ updatedAt: -1 })
 				.catch((error: Error) => {
 					return error.message
 				})

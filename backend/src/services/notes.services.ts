@@ -15,14 +15,9 @@ export const removeCategory = async (_id: ObjectId, category: string[]) => {
 	return await notes.removeCategory(_id, category)
 }
 
-export const listUnarchivedNotes = async () => {
-	return await notes.listUnarchivedNotes()
+export const listNotes = async () => {
+	return await notes.listNotes()
 }
-
-export const listArchivedNotes = async () => {
-	return await notes.listArchivedNotes()
-}
-
 export const editNote = async (_id: ObjectId, newValues: NoteInterface) => {
 	return await notes.editNote(_id, newValues)
 }

@@ -20,12 +20,8 @@ export class notesRepository {
 		return await this.dao.removeCategory(_id, category)
 	}
 
-	listUnarchivedNotes = async () => {
-		return await this.dao.listUnarchivedNotes()
-	}
-
-	listArchivedNotes = async () => {
-		return await this.dao.listArchivedNotes()
+	listNotes = async () => {
+		return await this.dao.listNotes()
 	}
 
 	editNote = async (_id: ObjectId, newValues: NoteInterface) => {
