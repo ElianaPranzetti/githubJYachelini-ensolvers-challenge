@@ -13,7 +13,7 @@ import { authentication } from './passport'
 const app = express()
 
 app.use(express.json())
-app.use(cors({ credentials: true }))
+app.use(cors({ origin:['http://localhost:4173','http://localhost:5173'],credentials: true }))
 // app.use(session({ secret: 'ensolvers', resave: true, saveUninitialized: true }))
 // app.use(cookieParser())
 // ;(async () => {

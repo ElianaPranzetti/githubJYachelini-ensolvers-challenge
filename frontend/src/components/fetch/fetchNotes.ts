@@ -3,7 +3,7 @@ import { DatabaseNoteInterface } from '../../interfaces/NoteInterface'
 import { setNotesType } from '../../types/Types'
 
 export const fetchNotes = (setNotes: setNotesType, archivedNotes: boolean) => {
-	axios.get(`https://ensolvers-noteapp.herokuapp.com${archivedNotes ? '/notes/archive' : '/notes'}`, { withCredentials: true }).then((res: AxiosResponse) => {
+	axios.get(`http://localhost:8080${archivedNotes ? '/notes/archive' : '/notes'}`, { withCredentials: true }).then((res: AxiosResponse) => {
 		const filteredNotes: DatabaseNoteInterface[] = []
 		res.data.forEach((note: DatabaseNoteInterface) => {
 			const noteInformation = {
