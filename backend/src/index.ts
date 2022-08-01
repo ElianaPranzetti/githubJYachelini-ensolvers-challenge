@@ -1,4 +1,3 @@
-import { env } from './config/env'
 import app from './server/app'
 import './DB/db'
 
