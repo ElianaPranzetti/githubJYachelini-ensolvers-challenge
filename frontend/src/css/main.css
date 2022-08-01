@@ -4,7 +4,6 @@
           flex-grow: 1;
   border: none;
   outline: none;
-  background-color: transparent;
 }
 
 * {
@@ -69,7 +68,6 @@
 
 #root .App .left-notes nav .views-nav .search-by-category .search-by-category_box {
   border-radius: 0.2rem;
-  background: white;
   padding: 0.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,6 +90,10 @@
 #root .App .left-notes nav .views-nav .add-category button {
   font-size: .875rem;
   padding: .675rem;
+}
+
+#root .App .left-notes nav .views-nav .add-category button:hover {
+  background-color: black;
 }
 
 #root .App .rigth-notes {

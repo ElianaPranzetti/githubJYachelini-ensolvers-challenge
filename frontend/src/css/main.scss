@@ -39,7 +39,6 @@
 						}
 						.search-by-category_box {
 							border-radius: 0.2rem;
-							background: white;
 							padding: 0.2rem;
 							display: flex;
 							flex-wrap: wrap;
@@ -58,6 +57,9 @@
 						button {
 							font-size: .875rem;
 							padding: .675rem;
+							&:hover{
+								background-color: black;
+							}
 						}
 					}
 				}
