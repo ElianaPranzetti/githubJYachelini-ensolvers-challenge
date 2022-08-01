@@ -1,7 +1,7 @@
 import { useContext, useEffect, useRef } from 'react'
 import Note from './Note'
-import { DatabaseNoteInterface } from '../interfaces/NoteInterface'
-import { NoteContext } from './Context/NotesContext'
+import { DatabaseNoteInterface } from '../../interfaces/NoteInterface'
+import { NoteContext } from '../Context/NotesContext'
 
 function ListNotes() {
 	const { notes, filter, archivedNotes } = useContext(NoteContext)

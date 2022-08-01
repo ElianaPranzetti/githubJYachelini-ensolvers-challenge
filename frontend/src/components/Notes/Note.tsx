@@ -1,6 +1,6 @@
 import { useContext } from 'react'
-import { NoteInterface } from '../interfaces/NoteInterface'
-import { ModalContext } from './Context/ModalContext'
+import { NoteInterface } from '../../interfaces/NoteInterface'
+import { ModalContext } from '../Context/ModalContext'
 
 const Note = ({ title, content, _id }: NoteInterface) => {
 	const { handleModalEdit,handleCreateFalse } = useContext(ModalContext)
