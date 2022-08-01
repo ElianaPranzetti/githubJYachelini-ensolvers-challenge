@@ -22,3 +22,13 @@ This scripts installs all the dependencies of both apps and run each of them.
 - NodeJS
 - Express
 - MongoDB
+
+
+[LiveDemo][demo]
+
+
+
+
+
+<!-- Links -->
+[demo]: https://jyachelini.github.io/noteapp-front/
